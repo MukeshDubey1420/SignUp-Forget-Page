@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Main CSS-->
+		<link rel="stylesheet" type="text/css" href="raw/css/main.css">
+		<link rel="stylesheet" type="text/css" href="raw/css/dashboard.css">
+		<!-- Font-icon css-->
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--loaders.css library-->
+		<link href="raw/css/loaders.min.css" rel="stylesheet">
+
+		<!--iziModal stylesheet-->
+		<link rel="stylesheet" href="raw/css/iziModal.min.css"  integrity="sha256-IyR33qBiUXj7Clf/BpIUivtGnpIpLIL0XOCEGSQPZxg=" crossorigin="anonymous" />
+		<!-- iziToast stylesheet -->
+		<link href="raw/css/iziToast.min.css" rel="stylesheet">
+
+        <script src="raw/js/jquery-3.2.1.min.js"></script>
+        <!--Jquery Validation Plugin-->
+        <script src="raw/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="raw/js/adinfraheight.js"></script>
+        <script type="text/javascript" src="raw/js/dashboard.js"></script>
+        <!--iziModal script-->
+        <script src="raw/js/iziModal.min.js" integrity="sha256-vVnwgKyq3pIb4XdL91l1EC8j7URqDRK8BAWvSnKX0U8=" crossorigin="anonymous"></script>
+        <!-- iziToast JavaScript -->
+        <script type="text/javascript" src="raw/js/iziToast.min.js"></script>
+<style>
+.forget-form{
+min-height:550px !important;
+background:#fff;
+}
+
+</style>
+        <title>
+            
+    Login
+
+        </title>
+    </head>
+
+    <body class="app sidebar-mini">
+        <!--Processing-->
+        <div id="processing" class="d-flex justify-content-center align-items-center">
+            <div>
+                <div class="loader-inner" id="processing-loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contents">
+            
+
+
+
+            
+    <section class="material-half-bg">
+        <div class="cover"></div>
+    </section>
+
+    <section class="login-content">
+        <div class="logo">
+            <h1>Admin Dashboard</h1>
+        </div>
+        <div class="login-box">
+            <form class="login-form" method="post" action="/accounts/login/">
+                <input type='hidden' name='csrfmiddlewaretoken' value='2aDVyh8g0so7FWKoSgDYZlDL9bwTyE4x1jT3T5azzD5zWBcXi3d7IEDaFbch5bvZ' />
+                <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>SIGN IN</h3>
+                <div class="form-group">
+                    <label class="control-label">USERNAME</label>
+                    <input name="username" class="form-control" type="text" placeholder="Email" autofocus>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">PASSWORD</label>
+                    <input name="password" class="form-control" type="password" placeholder="Password">
+                    <input type="hidden" name="next" value="/dashboard/" />
+                </div>
+				
+				
+				
+                <div class="form-group">
+                    <div class="utility">
+                        <div class="">
+                            <label>
+                                <input name="remember_me" type="checkbox"><span class="label-text"> Stay Signed in</span>
+                            </label>
+                        </div>
+                        <p class="semibold-text mb-2"><a href="#" data-toggle="flip">Create A New Account</a></p>
+                    </div>
+                </div>
+                <div class="form-group btn-container">
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa fa-sign-in fa-lg fa-fw"></i>SIGN IN</button>
+                </div>
+            </form>
+            <form class="forget-form" action="index.html">
+                <h3 class="login-head"><i class="fa fa-lg fa-fw fa-lock"></i>Sign Up</h3>
+                <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <input class="form-control" type="text" placeholder="Name">
+                </div>
+				
+				 <div class="form-group">
+                    <label class="control-label">EMAIL</label>
+                    <input class="form-control" type="text" placeholder="Email">
+                </div>
+				
+				
+				 <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <input class="form-control" type="text" placeholder="Password">
+                </div>
+				
+				
+				 <div class="form-group">
+                    <label class="control-label">Confirm Password</label>
+                    <input class="form-control" type="text" placeholder="Confirm Password">
+                </div>
+				
+				
+				
+                <div class="form-group btn-container">
+                    <button class="btn btn-primary btn-block"><i class="fa fa-unlock fa-lg fa-fw"></i>RESET</button>
+                </div>
+                <div class="form-group mt-3">
+                    <p class="semibold-text mb-0"><a href="#" data-toggle="flip"><i class="fa fa-angle-left fa-fw"></i> Back to Login</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+            
+
+
+
+            
+
+        </div>
+
+        
+    
+
+<!-- Essential javascripts for application to work-->
+
+<script src="raw/js/popper.min.js"></script>
+<script src="raw/js/bootstrap.min.js"></script>
+<script src="raw/js/main.js"></script>
+<!--The javascript plugin to display page loading on top-->
+<script src="raw/js/pace.min.js"></script>
+
+
+
+        
+    <script type="text/javascript">
+        // Login Page Flipbox control
+        $('.login-content [data-toggle="flip"]').click(function() {
+            $('.login-box').toggleClass('flipped');
+            return false;
+        });
+    </script>
+
+
+        
+
+
+    </body>
+</html>
